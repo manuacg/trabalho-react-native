@@ -1,16 +1,21 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import React from 'react';
 import { styles } from './styles';
 import { Entypo, AntDesign } from '@expo/vector-icons';
 import Poster from '../../../assets/poster.jpg';
 import Fundo from '../../../assets/header.jpg';
 import Ad from '../../../assets/ad.jpg';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.blocoHeader}>
-        <Image source={Fundo} style={styles.header} />
+        <ImageBackground style={styles.header} source={Fundo}>
+          <LinearGradient
+            colors={['#00000000', '#191c21']}
+            style={{ height: '100%', width: '100%' }}></LinearGradient>
+        </ImageBackground>
       </View>
 
       <View style={styles.content}>

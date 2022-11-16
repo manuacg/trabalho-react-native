@@ -1,12 +1,17 @@
-import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 import React from 'react';
 import { styles } from './styles';
-import Fundo from '../../../assets/loginfundo.jpg'
+import Fundo from '../../../assets/loginfundo.jpg';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export const Login = () => {
   return (
     <View style={styles.container}>
-    <Image source={Fundo} style={styles.image}/>
+      <ImageBackground style={styles.image} source={Fundo}>
+        <LinearGradient
+          colors={['#00000000', '#191c21']}
+          style={{ height: '100%', width: '100%' }}></LinearGradient>
+      </ImageBackground>
       <View style={styles.texto}>
         <Text style={styles.title}>Sign in to Letterboxd</Text>
         <TextInput

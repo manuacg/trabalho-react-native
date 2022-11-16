@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { Fundo } from '../../../assets/loginfundo.jpg';
 
 export const styles = StyleSheet.create({
   container: {
@@ -11,7 +10,7 @@ export const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: '65%',
+    height: 450,
   },
   texto: {
     flex: 3,

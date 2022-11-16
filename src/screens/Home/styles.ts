@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
   },
   header: {
     width: '100%',
+    height: 280,
     flex:2
   },
   content: {
