@@ -3,12 +3,11 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    //padding: 20,
     flexDirection: 'column',
   },
   blocoHeader: {
     flex: 2,
-    backgroundColor: 'red',
+    backgroundColor: '#191c21',
   },
   header: {
     width: '100%',
@@ -16,8 +15,7 @@ export const styles = StyleSheet.create({
   },
   content: {
     flex: 4,
-    backgroundColor: '#191c21',
-    //paddingHorizontal: 10
+    backgroundColor: '#191c21'
   },
   informacoes: {
     justifyContent: 'space-between'
@@ -35,8 +33,6 @@ export const styles = StyleSheet.create({
   title: {
     color: '#fff',
     fontSize: 24,
-    //marginBottom: 5,
-    //marginTop: 15
   },
   link: {
     color: '#fff',
@@ -78,12 +74,10 @@ export const styles = StyleSheet.create({
     marginTop: 15,
     alignItems: 'center',
     alignContent: 'center',
-    //paddingHorizontal: 30
   },
   adImage: {
     width: 300,
-    height: 45,
-    
+    height: 45, 
   },
   adText: {
     color: '#99a9b9',
@@ -159,5 +153,16 @@ export const styles = StyleSheet.create({
     width: 23,
     height: 18,
     marginLeft: 2
+  },
+  plus:{
+    position: 'absolute',
+    right: 0,
+    width: 40,
+    height: 40,
+    backgroundColor: '#01c030',
+    borderRadius: 20,
+    alignContent: 'center',
+    alignItems: 'center',
+    padding: 5
   },
 });

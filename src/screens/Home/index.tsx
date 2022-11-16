@@ -1,7 +1,7 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { styles } from './styles';
-import { Entypo } from '@expo/vector-icons';
+import { Entypo, AntDesign } from '@expo/vector-icons';
 import Poster from '../../../assets/poster.jpg';
 import Fundo from '../../../assets/header.jpg';
 import Ad from '../../../assets/ad.jpg';
@@ -73,6 +73,9 @@ export const Home = () => {
               </View>
             </View>
           </View>
+          <TouchableOpacity style={styles.plus}>
+            <AntDesign name="plus" size={24} color="#fff" />
+          </TouchableOpacity>
         </View>
         <View style={styles.div}></View>
       </View>
